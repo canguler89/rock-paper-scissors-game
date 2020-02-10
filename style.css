@@ -9,6 +9,22 @@
   margin-top: 20px;
   margin-bottom: 30px;
 }
+
+#scissors,
+#rock,
+#paper {
+  border-radius: 10px;
+  box-shadow: -1rem 0 3rem #000;
+  transition: 0.4s ease-out;
+  position: relative;
+}
+#scissors:hover,
+#rock:hover,
+#paper:hover {
+  transform: translateY(-20px);
+  transition: 0.4s ease-out;
+}
+
 .scores {
   max-width: 50%;
   display: flex;
@@ -52,4 +68,12 @@ h1 {
 #blank:hover span::after {
   opacity: 1;
   right: 0;
+}
+
+.gameChoices {
+  display: flex;
+}
+#computerPick,
+#playerPick {
+  text-transform: uppercase;
 }
